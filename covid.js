@@ -1,6 +1,3 @@
-
-
-
 $( window ).load(function() {
   let searchParams = new URLSearchParams(window.location.search);
   let clave = searchParams.get('id1');
@@ -27,11 +24,12 @@ $('#buscar').click(function(event){
 
   } else {
 
-  		if (  (id1=="123") && (id2="321") ) {
+  		if (  (id1=="c1badb02-21d6-451d-9a1a-234e135226ca") && (id2="1633986730888") ) {
 
 		$('#modalcontenedor').show();
-             document.getElementById('modalcontenedor').style.opacity = "1";
+             document.getElementById('modalcontenedor').style.opacity = "1"; 
              document.getElementById('modal').style.opacity = "1";
+             $( "#modalcontenedor" ).addClass( "swal-overlay--show-modal" );
  			 event.stopPropagation();
 
   		} else { $('#modalerror').show();  }
@@ -65,5 +63,8 @@ $("#contendorrecaptcha").click(function(e){
 
 
 });
+
+
+
 
 
